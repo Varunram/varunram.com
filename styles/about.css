@@ -1,0 +1,57 @@
+@font-face {
+  font-family: arcadeClassic;
+  src: url('../fonts/ARCADECLASSIC.TTF');
+}
+
+@font-face {
+  font-family: karmaticArcade;
+  src: url('../fonts/ka1.ttf');
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  background-size: 50% 100%;
+}
+
+.vg, .welcome, .continue, .return {
+  font-family: arcadeClassic !important;
+  background: -webkit-linear-gradient(#FFDD00, #FFB300, #FF8000, #FF5500, #FF0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vg {
+  font-size: 100px;
+}
+
+.iamwho {
+  font-family: 'karmaticArcade';
+  font-size: 20px;
+  background: #aaa;
+}
+
+.continue {
+  font-size: 60px;
+}
+
+.header {
+  position: fixed;
+  text-align: left;
+  width: 100%;
+  margin-left: 200px;
+  padding: 20px;
+  display: block;
+  margin: -50 auto;
+}
+
+.return {
+  font-size: 30px;
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+}

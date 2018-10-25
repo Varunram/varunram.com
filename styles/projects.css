@@ -1,0 +1,235 @@
+@font-face {
+  font-family: arcadeClassic;
+  src: url('../fonts/ARCADECLASSIC.TTF');
+}
+
+@font-face {
+  font-family: karmaticArcade;
+  src: url('../fonts/ka1.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  background-size: 50% 100%;
+}
+
+.vg, .welcome, .continue, .return {
+  font-family: arcadeClassic !important;
+  background: -webkit-linear-gradient(#FFDD00, #FFB300, #FF8000, #FF5500, #FF0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vg {
+  font-size: 100px;
+}
+
+.iamwho {
+  font-family: 'karmaticArcade';
+  font-size: 20px;
+  background: #aaa;
+}
+
+.continue {
+  font-size: 60px;
+}
+
+.header {
+  position: fixed;
+  text-align: left;
+  width: 100%;
+  margin-left: 200px;
+  padding: 20px;
+  display: block;
+  margin: -50 auto;
+}
+
+.return {
+  font-size: 30px;
+  position: fixed;
+  bottom: 0px;
+  right: 50px;
+}
+
+@font-face {
+  font-family: 'pokemon-red';
+  src: url(https://cdn.rawgit.com/shelune/pokedex-entry/master/pkm-red-font.ttf) format("truetype");
+}
+
+.shadow {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.entries {
+  padding: 0px 10px 0px 30px;
+}
+
+.frame {
+  height: 400px;
+  width: 400px;
+  background-color: transparent;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.entry-container {
+  background: #FFEFFF;
+  width: 100%;
+  height: 90%;
+  border: 6px solid #AD734A;
+  box-shadow: inset 0 0 0 2px #000000;
+  font-family: 'pokemon-red';
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.entry-container h1 {
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 16px;
+}
+
+.entry-container h1:last-child {
+  margin-bottom: 0;
+}
+
+.entry--upper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px;
+}
+
+.upper__left {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.upper__left img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.upper__left span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.upper__right span {
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  text-align: right;
+  padding-left: 30px;
+}
+
+.entry__hr {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #000000;
+}
+
+.hr__block {
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: #fff;
+  box-shadow: 0 0 0 3px #000000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+}
+
+.hr__block::after,
+.hr__block::before {
+  position: absolute;
+  width: 100%;
+  content: '';
+  background: #E7A57B;
+  height: 2px;
+}
+
+.hr__block::after {
+  bottom: 0px;
+  height: 2px;
+}
+
+.hr__block::before {
+  top: 0px;
+}
+
+.hr__block-0 {
+  margin-left: 20px;
+}
+
+.hr__block-1 {
+  margin-left: 60px;
+}
+
+.hr__block-2 {
+  margin-left: 100px;
+}
+
+.hr__block-3 {
+  margin-left: 140px;
+}
+
+.hr__block-4 {
+  right: 0;
+  margin-right: 20px;
+}
+
+.hr__block-5 {
+  right: 0;
+  margin-right: 60px;
+}
+
+.hr__block-6 {
+  right: 0;
+  margin-right: 100px;
+}
+
+.hr__block-7 {
+  right: 0;
+  margin-right: 140px;
+}
+
+.entry--lower {
+  position: relative;
+  padding: 20px;
+  padding-top: 0;
+}
+
+.entry--lower::after {
+  position: absolute;
+  content: '';
+  height: 10px;
+  border: 10px solid transparent;
+  border-top-color: #000000;
+  right: 20px;
+}
+
+.page--1,
+.page--2 {
+  cursor: pointer;
+  height: 100%;
+  font-size: 18px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  word-spacing: 10px;
+  margin: 0 auto;
+}
+
+.page--2 {
+  display: none;
+}
