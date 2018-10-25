@@ -8,12 +8,17 @@
   src: url('../fonts/ka1.ttf');
 }
 
+@font-face {
+  font-family: atari;
+  src: url('../fonts/atari.ttf');
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: black;
+  background: linear-gradient(#232526, #414345);
   background-size: 50% 100%;
 }
 
@@ -28,10 +33,13 @@ body {
   font-size: 100px;
 }
 
-.iamwho {
-  font-family: 'karmaticArcade';
-  font-size: 20px;
-  background: #aaa;
+.subh {
+  font-family: 'atari';
+  text-transform: uppercase;
+  font-size: 40px;
+  background: -webkit-linear-gradient(#24FE41, #FDFC47);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .continue {
