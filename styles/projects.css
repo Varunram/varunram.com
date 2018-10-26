@@ -227,9 +227,8 @@ body {
   right: 20px;
 }
 
-.page--1,
-.page--2 {
-  cursor: pointer;
+.page--1 {
+  cursor: pointer;4
   height: 100%;
   font-size: 18px;
   letter-spacing: 3px;
