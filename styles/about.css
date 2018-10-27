@@ -1,6 +1,6 @@
 @font-face {
   font-family: arcadeClassic;
-  src: url('../fonts/ARCADECLASSIC.TTF');
+  src: url('../fonts/arcadeclassic.ttf');
 }
 
 @font-face {
@@ -14,8 +14,11 @@
 }
 
 body {
-  background: black;
-  background-size: 50% 100%;
+  background: url(../images/pillars.jpg) no-repeat center center fixed;
+  webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .vg, .welcome, .continue, .return {
@@ -32,7 +35,14 @@ body {
 .iamwho {
   font-family: 'karmaticArcade';
   font-size: 20px;
-  background: #aaa;
+  background: #eee;
+  padding: 10 20 10 20;
+  line-height: 1.4em;
+}
+
+.comma {
+  font-family: arcadeClassic !important;
+  font-size: 25px;
 }
 
 .continue {
@@ -40,7 +50,6 @@ body {
 }
 
 .header {
-  position: fixed;
   text-align: left;
   width: 100%;
   margin-left: 200px;

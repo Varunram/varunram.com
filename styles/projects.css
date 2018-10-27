@@ -13,13 +13,20 @@
   src: url('../fonts/atari.ttf');
 }
 
+@font-face {
+  font-family: 'pokemon-red';
+  src: url('../fonts/pkm-red-font.ttf') format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: linear-gradient(#232526, #414345);
+  /*background: linear-gradient(#232526, #414345);
   background-size: 50% 100%;
+  */
+  background: url('../images/matrix.png');
 }
 
 .vg, .welcome, .continue, .return {
@@ -61,11 +68,6 @@ body {
   position: fixed;
   bottom: 0px;
   right: 50px;
-}
-
-@font-face {
-  font-family: 'pokemon-red';
-  src: url(https://cdn.rawgit.com/shelune/pokedex-entry/master/pkm-red-font.ttf) format("truetype");
 }
 
 .shadow {
