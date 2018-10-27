@@ -4,7 +4,7 @@
 }
 
 @font-face {
-  font-family: roboto;
+  font-family: krx;
   src: url('../fonts/Roboto.ttf');
 }
 
@@ -15,7 +15,7 @@
 body {
   background: #383838;
   color: #14fdce;
-  font-family: 'roboto';
+  font-family: 'krx';
   font-size: 24px;
   -webkit-font-smoothing: none;
   line-height: 1.2;
