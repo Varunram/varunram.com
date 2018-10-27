@@ -21,35 +21,27 @@
         </div>
       </div>
       <p>
-        American Fuyzzy Lop or AFL was developed initially by lcamtuf at google and later
-        open sourced. AFL is a dumb mutation based fuzzer which randomly mutates inputs
-        to the source program given. It needs to be compiled into the source of the program
-        executable (for example the gcc compiler) and then one can proceed normally with
-        compiling and running the program.
+        American Fuzzy Lop or AFL was developed at google by lcamtuf and later
+        open sourced. It is a dumb, mutation based fuzzer which randomly mutates inputs
+        into the source program. It needs to be compiled along with the program
+        executable (eg the gcc compiler) and then one can proceed with fuzzing the program.
       </p>
       <p>
-        To fuzz the program, one must run the target executable from within afl and then
-        wait for it to find unknown paths. There's a UI which shows the current state
-        of fuzzing and complete fuzzing may take several hours if not days on standard
-        consumer hardware
+        To fuzz the program, one must run the target executable from within afl using aflfuzz and then
+        wait for it to discover paths. There's a UI attached which shows the current state
+        of fuzzing since complete fuzzing may take several hours if not days on standard
+        consumer hardware.
       </p>
       <p>
-        The project I worked on at École Normale Supérieure, Paris with Dr. David Naccache was regarding the
-        applicability of fuzzers to LaTeX and to see if the LaTeX executable was
-        vulnerable to rogue pdfs and inputs.
-        During the course of two months, we started off from the basics of fuzzers and
-        then moved to implement one test case after the other, feeding inputs to afl,
-        getting ouputs and then documenting them when required. We also experimented
-        with other fuzzers to compare their performance to afl and see where we
-        could improve afl's fuzzing techniques. We also analysed the way in which
-        afl mutates its inputs and suggested a few changes towards the end.
-      </p>
-      <p>
-        It was a very in tersting project since I, just coming back from workin on Nmap
-        was more oriented towards the network side of things and then I started to work on
-        fuzzing which w as an entirely new thing to me at the time. I learnt tons of new things
-        during my time at ENS and met lots of interesting people, from whom I got loads of
-        interesting ideas.
+        The project I worked on at École Normale Supérieure, Paris
+        was regarding the applicability of fuzzers to LaTeX and to see if the LaTeX
+        executable was vulnerable to rogue pdfs and inputs.
+        During the course of two months, we started off from the basics of fuzzers,
+        moved on to implement one test case after the other feeding inputs to afl,
+        compiled ouputs and then finally documented our findings. We also experimented
+        with other fuzzers to compare their performance to afl and see how we
+        could improve afl.It was a very interesting project since I, coming back from working on Nmap
+        was more oriented towards the network stack and then I happened to work on
       </p>
       <p class="return" style="float: right"><a href="../projects.html">Back</a></p>
     </div>

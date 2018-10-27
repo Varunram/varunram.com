@@ -21,44 +21,33 @@
         </div>
       </div>
       <p>The Nmap Project is an umbrella of projects which are collectively used by pentesters worldwide
-        for network, packet and traffic analaysis. The most popular of these is the nmap scannner,
-        initially authored by "Fyodor" in 1996.
+        for network, packet and traffic analaysis. The most popular of these is the nmap scannner
+        authored by Gordon "Fyodor" Lyon in 1996.
        </p>
        <p>
-         Nmap is written in C, with elements of C++ and also contains the Nmap Scripting Engine (NSE)
-         which is written in Lua. The goal of nmap written in C is for it to be easily used in a variety
-         of environments along with the raw speed that C provides.
+         Nmap is written in C, with elements of C++ and contains the Nmap Scripting Engine (NSE)
+         which is written in Lua. The reason nmap is written in C is for it to be easily used in a variety
+         of environments along with the performance benefits that C provides.
        </p>
        <p>
          My work with the Nmap Project over the course of 6 months was bug fixing the Nmap scanner, the Zenmap GUI,
-         the Ncat tool and performing packet captures for the Npcap packet capture framework. I suggested 72 changes as Pull Requests to the
-         namp project of which some were accepted into the main Nmap framework.
-       </p>
-       <p>
+         the Ncat tool and performing packet captures for the Npcap packet capture framework.
          My primarily goal at Nmap was to make it less buggy - some parts of the
-         codebase were not touched for years and people had forgotten their true intent. Another
-         change I made was converting code tyo C++11, which performed way faster due to the
-         optimizations to the language over a decade (nmap uses C++ '03). Zenmap was in Python 2 and
-         I opened a Pull Request in order to port it to python3. Other fixes to Zenmap include macOS
-         compatibility checks and OS specific UI changes.
+         codebase were not touched for years and its true function was forgotten. Another
+         change I made was porting some parts from C++ '03 to C++11 which performs way faster due to
+         optimizations to the language over the years. Other fixes include general macOS
+         compatibility checks for all sub-projects, OS specific UI changes for Zenmap and general
+         bug fixing in Ncat.
        </p>
        <p>
-         I did some work on Ncat as well, whose purpose
-         was similar to the standard but not maaintained native linux netcat framework. Apart from this,
-         I worked on nmap's nascent Npcap framework and helped the lead maintainer fix bugs and get
-         specific packet captures along wiht their analysis using Wireshark.
+         Aside from contributing to Nmap, it was interesting
+         to test anonymous servers for a specific vulnerability and to report if one was found.
+         It also taught me how the internet's base layer works and is structured and provided
+         an opportunity to interact with some of the best security researchers in the field.
+         Overall, Nmap was a great project and I enjoyed the time I worked on it.
        </p>
        <p>
-         It was interesting
-         to test anonymous servers for a specific vulnerability and to report it to them
-         if one was found. It also taught me lots of things about how the internet's base
-         layer works and how the interenet is structured from a networks viewpoint.
-         I also got nice trivia on important security statistics from some of the best
-         in the field and had the opportunity to interact with some of them.
-         Overall, Nmap was a great project and I enjoyed the time I worked on it. 
-       </p>
-       <p>
-         <a href="https://github.com/nmap/nmap">Nmap Github</a>&nbsp;
+         <a href="https://github.com/nmap/nmap">Nmap on GitHub</a>&nbsp;
        </p>
       <p class="return" style="float: right"><a href="../projects.html">Back</a></p>
     </div>
