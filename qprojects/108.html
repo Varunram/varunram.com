@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Varunram Ganesh's Website</title>
+  <title>108 | Varunram Ganesh's Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="../styles/template.css">
@@ -17,7 +17,7 @@
       <h2 style="float: right; top: 0px">Varunram's Website</h2>
       <div class="centerthis">
         <div class="ib">
-          <h1>108Ambulance</h1>
+          <h1>108 Ambulance</h1>
         </div>
       </div>
       <p>
@@ -27,26 +27,27 @@
         with focus being placed on location based services. 108 Ambulance does that
         and much more using the power of Google's APIs,
         offline triangulation using cell phone towers and an interactive chatbot
-        that can converse in over 20 languages.
+        that can converse in over 20 local languages.
       </p>
       <p>
          Location is identified using a three stage process:<br><br>
-         1. If the user has internet access, we use v1 of Google's GeoLocation APIs to get a rough 100m
-         radius of where the user is located and send that to 108's emergency cell<br><br>
-         2. If the user still remains connected after we send the message, update the location
-         using v2 of Google's GeoLocation APIs to provide a precise 10m radius<br><br>
-         3. If the user is not connected to the internet, we triangulate his position and send
-         his location as an SMS to 108's dedicated cell along with a link to the latitude
-         and longitude on Google Maps for easy navigation<br><br>
+         1. If the user has internet access, it uses v1 of Google's GeoLocation APIs to get a rough 100m
+         radius of where the user is located and returns that.<br><br>
+         2. If the user still remains connected after the app sends a message, it updates the location
+         using v2 of Google's GeoLocation APIs to provide a precise 10m radius of the user's location.<br><br>
+         3. If the user is not connected to the internet, the app triangulates his position and sends
+         the information as an SMS to 108's dedicated cell along with a link to the latitude
+         and longitude on Google Maps for easy driver navigation.<br><br>
          If a user is incapable of accessing his phone at the time of the accident,
-         an interactive chatbot immediately asks whether he's okay after 60s of delay. If no
-         response is received within 30s, the chatbot immediately calls 108's emergency cell.
+         an interactive chatbot immediately asks whether he's fit after 60s of delay. If no
+         response is received within 30s of the alarm, the chatbot immediately calls 108's emergency cell.
       </p>
       <p>
         108 Ambulance also detects potential accidents using the gyroscope in a user's mobile phone.
         To avoid false positives, the chatbot
         in 108 Ambulance asks the user whether he's okay and if no repsonse is received within
-        30s, the app proceeds to call 108's emergency cell.
+        30s, the app proceeds to call 108's emergency cell, similar to the way in which it functions when
+        a user is incapable of using his phone.
       </p>
       <p>
         <a href="https://github.com/Varunram/EmergencyHandler">108 Ambulance on GitHub</a>

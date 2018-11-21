@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Varunram Ganesh's Website</title>
+  <title>AFL | Varunram Ganesh's Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="../styles/template.css">
@@ -23,14 +23,14 @@
       <p>
         American Fuzzy Lop or AFL was developed at google by lcamtuf and later
         open sourced. It is a dumb, mutation based fuzzer which randomly mutates inputs
-        into the source program. It needs to be compiled along with the program
-        executable (eg the gcc compiler) and then one can proceed with fuzzing the program.
+        to the source program. AFL needs to be compiled along with the program
+        executable (eg. the gcc compiler) for one to proceed with fuzzing the program.
       </p>
       <p>
-        To fuzz the program, one must run the target executable from within afl using aflfuzz and then
-        wait for it to discover paths. There's a UI attached which shows the current state
-        of fuzzing since complete fuzzing may take several hours if not days on standard
-        consumer hardware.
+        To fuzz the program, one must pass the target executable to aflfuzz and
+        wait for it to discover paths. There's a command line UI attached to aflfuzz which shows the current state
+        of fuzzing. Complete fuzzing may take several hours if not days on standard
+        consumer hardware and this is a main motivation behind having the CLI UI<UI></UI>.
       </p>
       <p>
         The project I worked on at École Normale Supérieure, Paris
@@ -39,9 +39,8 @@
         During the course of two months, we started off from the basics of fuzzers,
         moved on to implement one test case after the other feeding inputs to afl,
         compiled ouputs and then finally documented our findings. We also experimented
-        with other fuzzers to compare their performance to afl and see how we
-        could improve afl.It was a very interesting project since I, coming back from working on Nmap
-        was more oriented towards the network stack and then I happened to work on
+        with other fuzzers to compare their performance to afl and see where we
+        could improve afl.
       </p>
       <p class="return" style="float: right"><a href="../projects.html">Back</a></p>
     </div>
