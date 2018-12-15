@@ -6,10 +6,7 @@
 </head>
 
 <body>
-  <video autoplay muted loop id="myVideo">
-    <source src="videos/pacman.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
+  <video autoplay muted loop id="myVideo" src="videos/pacman.mp4" type="video/mp4"></video>
   <div class="content">
     <p class="vg">Varunram's &nbsp;&nbsp;Portfolio</p>
     <p class="small">For the MIT Media Lab</p>
@@ -18,18 +15,4 @@
   </div>
   <a href="https://github.com/Varunram/varunram.github.io"><img src="images/github.jpg" style="display: inline-block; float: right; position: relative;  right: 10px; bottom: 15px" height="30px" alt=""></a>
 </body>
-<script>
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
-</script>
 </html>
