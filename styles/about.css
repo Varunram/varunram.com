@@ -14,7 +14,8 @@
 }
 
 body {
-  background: url(../images/pillars.jpg) no-repeat center center fixed;
+  background: url(../images/donkeykong.jpg) no-repeat center center fixed;
+  opacity: 0.9;
   webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
