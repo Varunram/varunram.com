@@ -26,12 +26,12 @@ body {
   /*background: linear-gradient(#232526, #414345);
   background-size: 50% 100%;
   */
+  background: black !important;
   background: url('../images/spaceinvaders.jpg') no-repeat center center fixed;
   webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
 }
 
 .vg, .welcome, .continue, .return {
