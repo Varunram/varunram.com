@@ -8,11 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="../styles/template.css">
 </head>
-<div style="background: black !important">
-  <img src="../images/afl1.png" alt="" style="height: 100vh">
-  <h2 style="position: absolute; bottom: 40px; right: 20px">Scroll Down For More</h2>
-  <h2 style="position: absolute; top: 25px; right: 20px">AFL SCREENSHOT</h2>
-</div>
 <body>
   <body class="noisy"></body>
   <div class="emblem"><span class="icon-information"></span></div>
@@ -27,24 +22,7 @@
       <p>
         American Fuzzy Lop or AFL was developed at google by lcamtuf and later
         open sourced. It is a dumb, mutation based fuzzer which randomly mutates inputs
-        to the source program. AFL needs to be compiled along with the program
-        executable (eg. the gcc compiler) for one to proceed with fuzzing the program.
-      </p>
-      <p>
-        To fuzz the program, one must pass the target executable to aflfuzz and
-        wait for it to discover paths. There's a command line UI attached to aflfuzz which shows the current state
-        of fuzzing. Complete fuzzing may take several hours if not days on standard
-        consumer hardware and this is a main motivation behind having the CLI UI<UI></UI>.
-      </p>
-      <p>
-        The project I worked on at École Normale Supérieure, Paris
-        was regarding the applicability of fuzzers to LaTeX and to see if the LaTeX
-        executable was vulnerable to rogue pdfs and inputs.
-        During the course of two months, we started off from the basics of fuzzers,
-        moved on to implement one test case after the other feeding inputs to afl,
-        compiled ouputs and then finally documented our findings. We also experimented
-        with other fuzzers to compare their performance to afl and see where we
-        could improve afl.
+        to the source program.
       </p>
       <p class="return" style="float: right"><a href="../projects.html">Back</a></p>
     </div>
