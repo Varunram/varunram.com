@@ -35,16 +35,29 @@
       text-decoration: none;
     }
 
-    h2 {
+    a {
       color: white;
       position: absolute;
     }
-  </style>
 
+    @font-face {
+      font-family: arcadeClassic;
+      src: url('../fonts/ac1.ttf');
+    }
+
+    .continue{
+      font-family: arcadeClassic;
+      background: -webkit-linear-gradient(#FFDD00, #FFB300, #FF8000, #FF5500, #FF0000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 60px;
+    }
+  </style>
 </head>
 
 <body>
-  <h2>Back to website</h2>
+  <a class="continue" href="../index.html" target=_blank
+    style="display: inline-block; float: right; right: 10px; bottom: 15px">Home</a>
   <div id="pacman"></div>
   <script src="pacman.js"></script>
   <script src="modernizr-1.5.min.js"></script>
