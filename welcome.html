@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Entry Gateway</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entry Gateway</title>
+    <link rel="stylesheet" href="css/term.css">
+  </head>
+
+  <body class="">
+    <div class="container on">
+      <div class="screen">
+        <h3 class="title">
+          CONNECTION ESTABLISHED
+        </h3>
+        <div class="box--outer">
+          <div class="box">
+            <div class="box--inner">
+              <div class="content">
+                <div id="disappear">
+                  <div class="holder">
+                    <b>Warning</b> - You are about to access the matrix's interface. <br> Please enter your
+                    brain implant id and access code.
+                    <br>
+                    <br>
+                    <div class="row">
+                      <div class="col col__left label">
+                        ID
+                      </div>
+                      <div class="col col__center">
+                        <!--<input type="text" id="login" maxlength="32"  readonly>-->
+                        <input class="rows" type="text" style="text-align:center;" id="login" name="id"
+                          required="required" placeholder="" data-error="" maxlength="32" autocomplete="new-password"
+                          autofocus="true" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col col__left label">
+                        Code
+                      </div>
+                      <div class="col col__center ">
+                        <input class="rows" style="text-align:center;" type="password" id="password" name="password"
+                          required="required" placeholder="" data-error="" maxlength="32" autocomplete="new-password"
+                          autofocus="true" />
+                      </div>
+                    </div>
+                    <b class="flash" id="cheater">CRITICAL WARNING: HACKING PUNISHABLE BY DEATH</b>
+                    <div class="row">
+                      <button onclick=disappear() class="rows" type="submit" id="submit" name="submit">[log in]</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="appear">
+                  <br><b class="flash">GREETINGS, NEO. ITS BEEN A WHILE</b><br><br>
+                  <button class="rows" type="submit" id="submit" name="submit"><a href="index.html" style="text-decoration: none !important; color: inherit">Enter Matrix</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function disappear() {
+      var id = document.getElementById("login").value;
+      var password = document.getElementById("password").value;
+
+      if (id !== "" && password !== "") {
+        var x = document.getElementById("disappear");
+        x.style.display = "none";
+        var y = document.getElementById("appear");
+        y.style.display = "block";
+      } else {
+        var x = document.getElementById("cheater");
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  </html>
+  <!-- partial -->
+</body>
+
+</html>
