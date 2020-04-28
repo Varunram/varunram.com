@@ -1,18 +1,102 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="styles/index.css">
-  <title>Varunram Ganesh's Website</title>
+  <meta charset="UTF-8">
+  <title>Welcome to the Matrix</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
-  <video autoplay muted loop id="myVideo" src="videos/pacman.mp4" type="video/mp4"></video>
-  <div class="content">
-    <p class="vg">Varunram&nbsp;&nbsp;Ganesh</p>
-    <p class="continue" style="display: inline-block; float: left; margin-left: 300px"><a href="projects.html">Projects</a></p>
-    <p class="continue" style="display: inline-block; float: right; margin-right: 350px"><a href="about.html">About</a></p>
-  </div>
-  <a href="https://github.com/Varunram/varunram.github.io"><img src="images/github.jpg" style="display: inline-block; float: right; position: relative;  right: 10px; bottom: 15px" height="30px" alt=""></a>
-  <a class="continue" href="pacman/index.html" target=_blank style="display: inline-block; float: left; position: relative;  left: 10px; bottom: 30px" height="30px" alt="">Pacman</a>
+  <!-- partial:index.partial.html -->
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to the Matrix</title>
+    <link rel="stylesheet" href="css/term.css">
+  </head>
+
+  <body class="">
+    <div class="container on">
+      <div class="screen">
+        <h3 class="title">
+          CONNECTION ESTABLISHED
+        </h3>
+        <div class="box--outer">
+          <div class="box">
+            <div class="box--inner">
+              <div class="content">
+                <div id="disappear">
+                  <div class="holder">
+                    <b>Warning</b> - You are about to access the matrix's interface. <br> Enter
+                      brain implant id and access code.
+                    <br>
+                    <br>
+                    <div class="row">
+                      <div class="col col__left label">
+                        ID
+                      </div>
+                      <div class="col col__center">
+                        <!--<input type="text" id="login" maxlength="32"  readonly>-->
+                        <input class="rows" type="text" style="text-align:center;" id="login" name="id"
+                          required="required" placeholder="" data-error="" maxlength="32" autocomplete="new-password"
+                          autofocus="true" />
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col col__left label">
+                        Code
+                      </div>
+                      <div class="col col__center ">
+                        <input class="rows" style="text-align:center;" type="password" id="password" name="password"
+                          required="required" placeholder="" data-error="" maxlength="32" autocomplete="new-password"
+                          autofocus="true" />
+                      </div>
+                    </div>
+                    <b class="flash" id="cheater">SYSTEM WARNING: HACKING PUNISHABLE BY DISCONNECTION</b>
+                    <div class="row">
+                      <button onclick=disappear() class="rows" type="submit" id="submit" name="submit">[log in]</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="appear">
+                  <br><b id="message"></b><br><br>
+                  <button class="rows" type="submit" id="submit" name="submit"><a href="landing.html" style="text-decoration: none !important; color: inherit">Enter Matrix</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function disappear() {
+      var id = document.getElementById("login").value;
+      var password = document.getElementById("password").value;
+
+      if (id !== "" && password !== "") {
+        var x = document.getElementById("disappear");
+        x.style.display = "none";
+        var y = document.getElementById("appear");
+        y.style.display = "block";
+        
+        var m = document.getElementById("message");
+        var text = document.createTextNode("GREETINGS, " + id + ". WELCOME BACK");
+        m.appendChild(text);
+      } else {
+        var x = document.getElementById("cheater");
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  </html>
+  <!-- partial -->
 </body>
+
 </html>
