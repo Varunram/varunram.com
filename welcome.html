@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Entry Gateway</title>
+  <title>Welcome to the Matrix</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Entry Gateway</title>
+    <title>Welcome to the Matrix</title>
     <link rel="stylesheet" href="css/term.css">
   </head>
 
@@ -32,8 +32,8 @@
               <div class="content">
                 <div id="disappear">
                   <div class="holder">
-                    <b>Warning</b> - You are about to access the matrix's interface. <br> Please enter your
-                    brain implant id and access code.
+                    <b>Warning</b> - You are about to access the matrix's interface. <br> Enter
+                      brain implant id and access code.
                     <br>
                     <br>
                     <div class="row">
@@ -57,14 +57,14 @@
                           autofocus="true" />
                       </div>
                     </div>
-                    <b class="flash" id="cheater">CRITICAL WARNING: HACKING PUNISHABLE BY DEATH</b>
+                    <b class="flash" id="cheater">SYSTEM WARNING: HACKING PUNISHABLE BY DISCONNECTION</b>
                     <div class="row">
                       <button onclick=disappear() class="rows" type="submit" id="submit" name="submit">[log in]</button>
                     </div>
                   </div>
                 </div>
                 <div id="appear">
-                  <br><b class="flash">GREETINGS, NEO. ITS BEEN A WHILE</b><br><br>
+                  <br><b id="message"></b><br><br>
                   <button class="rows" type="submit" id="submit" name="submit"><a href="index.html" style="text-decoration: none !important; color: inherit">Enter Matrix</a></button>
                 </div>
               </div>
@@ -84,6 +84,10 @@
         x.style.display = "none";
         var y = document.getElementById("appear");
         y.style.display = "block";
+        
+        var m = document.getElementById("message");
+        var text = document.createTextNode("GREETINGS, " + id + ". WELCOME BACK");
+        m.appendChild(text);
       } else {
         var x = document.getElementById("cheater");
         x.style.display = "block";
