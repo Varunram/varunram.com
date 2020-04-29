@@ -1,0 +1,12 @@
+html {
+  background: #191919;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(1rem, #111), color-stop(1rem, transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(1rem, #111), color-stop(1rem, transparent));
+  background-image: linear-gradient(90deg, #111 1rem, transparent 1rem), linear-gradient(#111 1rem, transparent 1rem);
+  background-size: 1.2rem 1.2rem;
+}
+
+html,
+body,
+* {
+  font-family: 'Saira Extra Condensed', sans-serif;
+}

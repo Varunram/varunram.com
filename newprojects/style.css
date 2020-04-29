@@ -233,7 +233,6 @@ body,
   position: absolute;
   width: 30%;
   height: 30%;
-  border: 1px solid #fc8503;
   border-radius: 50%;
   overflow: visible;
   top: 50%;
@@ -443,4 +442,28 @@ body,
 section {
   display: inline-block;
   position: relative !important;
+}
+
+.row1 {
+  top: 200px !important;
+}
+
+.row2 {
+  top: 215px !important;
+}
+
+.col1 {
+  left: 260px !important;
+}
+
+.col2 {
+  left: 270px !important;
+}
+
+.col3 {
+  left: 280px !important;
+}
+
+.active {
+  border: 1px solid #fc8503;
 }

@@ -1,0 +1,13 @@
+html {
+	background: #191919;
+	background-image:
+		linear-gradient(90deg, #111 1rem, transparent 1rem),
+		linear-gradient(#111 1rem, transparent 1rem);
+	background-size: 1.2rem 1.2rem;
+}
+
+html,
+body,
+* {
+	font-family: 'Saira Extra Condensed', sans-serif;
+}
