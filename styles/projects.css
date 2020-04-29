@@ -26,11 +26,7 @@ body {
   /*background: linear-gradient(#232526, #414345);
   background-size: 50% 100%;
   */
-  background: url('../images/jupiter.jpg') no-repeat center center fixed;
-  webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: black;
 }
 
 .vg, .welcome, .continue, .return {
@@ -234,7 +230,7 @@ body {
 }
 
 .page--1 {
-  cursor: pointer;4
+  cursor: pointer;
   height: 100%;
   font-size: 18px;
   letter-spacing: 3px;
