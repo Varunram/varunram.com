@@ -31,6 +31,7 @@ body {
   font-weight: 300;
   text-shadow: 0 0 5px rgba(219, 14, 21, .8);
   background: url(https://image.ibb.co/h2hLAJ/bg.png) #000;
+  z-index: 1 !important;
   position: relative;
   height: 100vh
 }
@@ -833,4 +834,23 @@ body.off::after {
   -ms-transition-delay: 0s;
   -o-transition-delay: 0s;
   transition-delay: 0s;
+}
+
+#matrix-js {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 10 !important;
+}
+
+#canvas {
+  margin: 0;
+  padding: 0;
+  z-index: 10 !important;
+}
+
+#matrix-js {
+  background-color: black;
+  z-index: 10 !important;
 }
