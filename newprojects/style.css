@@ -449,7 +449,7 @@ section {
 }
 
 .row2 {
-  top: 255px !important;
+  top: 270px !important;
 }
 
 .col1 {
@@ -468,16 +468,18 @@ section {
   border: 1px solid #fc8503;
 }
 
-.projects {
-  position: fixed;
-  top: 40px;
-  left: 180px;
-}
-
 .homelink {
   position: fixed;
   top: 40px;
   right: 80px;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+h5 {
+  text-transform: uppercase;
 }
 
 .cracked {
