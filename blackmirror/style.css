@@ -1,0 +1,16 @@
+/*
+    Visualisierung der clip-paths
+    https://jsbin.com/zirabuk
+*/
+
+body {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
