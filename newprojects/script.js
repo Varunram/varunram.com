@@ -9,6 +9,7 @@ $(document).ready(function(){
 		$(".gameText").hide();
 		$('.gameTitle').hide();
 		$('#store').hide();
+		$('#store2').hide();
 		timeout();
 
 		// Variables for current position
@@ -70,11 +71,13 @@ $(document).ready(function(){
 			$(this).find('.gameText').show();
 			$(this).find('.gameTitle').show();
 			$(this).find('#store').show();
+			$(this).find('#store2').show();
 		},
 		function(){
 			$(this).find('.gameText').hide();
 			$(this).find('.gameTitle').hide();
 			$(this).find('#store').hide();
+			$(this).find('#store2').hide();
 		}
 	);
 
