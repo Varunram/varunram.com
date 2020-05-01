@@ -28,7 +28,7 @@ p span {
 }
 
 .elements p:nth-child(1) {
-    animation-delay: 0s
+    animation-delay: 0.5s
 }
 
 .elements p:nth-child(2) {
