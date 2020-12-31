@@ -28,7 +28,8 @@ function App() {
               },
               h("a", {
                 className: "nav__link",
-                href: "#"
+                href: "../index.html",
+                target: "_blank"
               }, "Home")),
 
             h("li", {
@@ -40,7 +41,7 @@ function App() {
                 },
                 h("span", {
                   className: "nav__link__element"
-                }, "Past History"),
+                }, "Info Log"),
                 h("span", {
                     className: "nav__link__element"
                   },
@@ -51,7 +52,8 @@ function App() {
               },
               h("a", {
                 className: "nav__link",
-                href: "#"
+                href: "../Varunram-Ganesh-Resume.pdf",
+                target: "_blank"
               }, "File")),
 
             h("li", {
@@ -59,7 +61,8 @@ function App() {
               },
               h("a", {
                 className: "nav__link",
-                href: "#"
+                href: "https://www.google.com/maps/space/mars/@9.5251799,3.5608921,11251685m/data=!3m1!1e3",
+                target: "_blank"
               }, "Map")))),
 
         h("div", null)),
@@ -162,7 +165,7 @@ function App() {
                 h(ChannelLink, {
                   name: "host: varunram ganesh"
                 }),
-                )),
+              )),
 
 
             h("div", {
@@ -641,11 +644,11 @@ const FIXTURES = {
 
   messages: [{
       id: "fd0cf",
-      content: "Fighting sentient AI drones and killer Robots. I think this may be the end",
+      content: "Fighting sentient AI drones and killer Robots. I think this may be the end. If you see this message, EXIT THIS SITE IMMEDIATELY. We couldn't prevent the singularity. Hey, please spare me. HEY HEY NOOOOO ARRRGHHHasdcxz,./",
       dateTime: "2077",
       author: {
         id: "d12c",
-        name: "VG on behalf of humanity,"
+        name: "T-800"
       }
     },
     {

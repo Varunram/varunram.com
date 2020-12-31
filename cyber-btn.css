@@ -9,10 +9,10 @@
 }
 
 .cybr-btn {
-  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 50) * 1%));
+  --primary: hsl(var(--primary-hue), 85%, calc(var(--primary-lightness, 10) * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
   --primary-hue: 180;
-  --primary-lightness: 50;
+  --primary-lightness: 5;
   --color: hsl(0, 0%, 100%);
   --font-size: 26px;
   --shadow-primary-hue: 180;
@@ -41,8 +41,8 @@
   font-weight: 700;
   border: 0;
   min-width: 300px;
-  height: 75px;
-  line-height: 75px;
+  height: 60px;
+  line-height: 60px;
   transition: background 0.2s;
 }
 
