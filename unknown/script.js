@@ -31,8 +31,6 @@ function App() {
                 href: "#"
               }, "Home")),
 
-
-
             h("li", {
                 className: "nav__item"
               },
@@ -42,22 +40,11 @@ function App() {
                 },
                 h("span", {
                   className: "nav__link__element"
-                }, "Messages"),
+                }, "Past History"),
                 h("span", {
                     className: "nav__link__element"
                   },
-                  h(Badge, null, "11")))),
-
-
-            h("li", {
-                className: "nav__item"
-              },
-              h("a", {
-                className: "nav__link",
-                href: "#"
-              }, "Shop")),
-
-
+                  h(Badge, null, "12")))),
 
             h("li", {
                 className: "nav__item"
@@ -65,9 +52,7 @@ function App() {
               h("a", {
                 className: "nav__link",
                 href: "#"
-              }, "Files")),
-
-
+              }, "File")),
 
             h("li", {
                 className: "nav__item"
@@ -76,10 +61,6 @@ function App() {
                 className: "nav__link",
                 href: "#"
               }, "Map")))),
-
-
-
-
 
         h("div", null)),
 
@@ -94,9 +75,7 @@ function App() {
             },
             h(TextHeading3, {
               className: "segment-topbar__title"
-            }, "Messages")),
-
-
+            }, "Past History")),
 
           h("div", {
               className: "segment-topbar__aside"
@@ -120,25 +99,24 @@ function App() {
               name: "Duke University",
             },
             channels: FIXTURES.education
-          })),
+          }),
+          ),
 
-          h(NavSection, {
+        h(NavSection, {
             renderTitle: props => h("h2", props, "Venture Capital")
           },
           h(ChannelNav, {
             channels: FIXTURES.venture
           })),
 
-
-          h(NavSection, {
+        h(NavSection, {
             renderTitle: props => h("h2", props, "Investment Banking")
           },
           h(ChannelNav, {
             channels: FIXTURES.ib
           })),
 
-
-          h(NavSection, {
+        h(NavSection, {
             renderTitle: props => h("h2", props, "Academia")
           },
           h(ChannelNav, {
@@ -146,7 +124,7 @@ function App() {
           })),
 
 
-          h(NavSection, {
+        h(NavSection, {
             renderTitle: props => h("h2", props, "Startups")
           },
           h(ChannelNav, {
@@ -182,7 +160,7 @@ function App() {
                   className: "segment-topbar__title"
                 },
                 h(ChannelLink, {
-                  name: "Watson"
+                  name: "varunram ganesh"
                 }))),
 
 
@@ -213,9 +191,6 @@ function App() {
                     className: "button__icon"
                   }))))),
 
-
-
-
           h("div", {
               className: "channel-feed__body"
             },
@@ -243,7 +218,6 @@ function App() {
                   for: "message"
                 }, "Message"),
 
-
                 h("div", {
                     className: "form-control"
                   },
@@ -253,8 +227,6 @@ function App() {
                     name: "message"
                   }))),
 
-
-
               h("div", {
                   className: "form-footer"
                 },
@@ -262,30 +234,28 @@ function App() {
                   type: "submit"
                 }, "Send")))))),
 
-
-
-
-
       h("div", {
           className: "app-b"
         },
         h(Pad, null,
           h(TextHeading3, {
             $as: "h4"
-          }, "What's this?"),
+          }, "What is this?"),
           h(TextParagraph1, null, "A ",
-            h("em", null, "fake"), " Slack or Discord type of app inspired by Cyberpunk 2077. This app is static, eg. not implementing much logic."),
-
-
-          h(TextParagraph1, null, "The goal is: showcasing a start of a UI kit. If you've played the game, you' might be able to pick-up some similarities with the in-game menus.")))));
-
-
-
-
-
-
-
-
+            h("em", null, "top secret "), " portal where you can view information on MR. VARUNRAM GANESH. The content in this websites and all messages within are F.Y.O."),
+          h(TextHeading3, {
+            $as: "h4"
+          }, "Tips"),
+          h(TextParagraph1, null, "Positions ordered reverse chronologically"),
+          h(TextParagraph1, null, "Numbers denote multiple roles performed"),
+          h(TextParagraph1, null, "Highlight indicates current positions"),
+          h(TextParagraph1, null, "Venture roles are ongoing"),
+          h(TextParagraph1, null, "varunram.com"),
+          h(TextHeading3, {
+            $as: "h4"
+          }, "Warning"),
+          h(TextParagraph1, null, "Unauthorized access to this website may result in immediate termination"),
+        ))));
 }
 
 function NavSection({
@@ -306,8 +276,6 @@ function NavSection({
       h("div", {
         className: "nav-section__body"
       }, children)));
-
-
 }
 
 function FeedMessage({
@@ -324,8 +292,6 @@ function FeedMessage({
 
           "I got a gig lined up in Watson, no biggie. If you prove useful, expect more side gigs coming your way. I need a half-decent netrunner. Hit me up, provide credentials, eddies on completion.")),
 
-
-
       h("div", {
           className: "message__footer"
         },
@@ -333,14 +299,11 @@ function FeedMessage({
           className: "message__authoring"
         }, "V. M. Vargas"),
         " - 11:04pm")));
-
-
-
 }
 
 function ChannelNav({
   activeChannel = null,
-  channels = []
+  channels = [],
 }) {
   return (
     h("ul", {
@@ -356,15 +319,10 @@ function ChannelNav({
       "nav__link--active" :
       ""
       }`,
-              href: "#"
+              href: channel.link,
+              target: "_blank",
             },
-
-            h(ChannelLink, channel, name))))));
-
-
-
-
-
+            h(ChannelLink, channel))))));
 }
 
 function ConversationNav({
@@ -391,11 +349,6 @@ function ConversationNav({
             h(ConversationLink, {
               conversation: convo
             }))))));
-
-
-
-
-
 }
 
 function ChannelLink({
@@ -422,10 +375,6 @@ function ChannelLink({
           className: "channel-link__element"
         },
         h(Badge, null, unread))));
-
-
-
-
 }
 
 function ConversationLink({
@@ -447,7 +396,6 @@ function ConversationLink({
         className: "conversation-link__icon"
       }),
 
-
       h("span", {
         className: "conversation-link__element"
       }, conversation.name),
@@ -457,10 +405,6 @@ function ConversationLink({
           className: "conversation-link__element"
         },
         h(Badge, null, conversation.unread))));
-
-
-
-
 }
 
 function Badge({
@@ -485,8 +429,6 @@ function Button({
       h("span", {
         className: "button__content"
       }, children)));
-
-
 }
 
 function Pad({
@@ -500,8 +442,6 @@ function Pad({
       h("div", {
         className: "pad__body"
       }, children)));
-
-
 }
 
 function MakeTextBase(classNameDefault, $asDefault) {
@@ -517,8 +457,6 @@ function MakeTextBase(classNameDefault, $asDefault) {
           className: `${classNameDefault} ${className}`
         },
         children));
-
-
   };
 }
 
@@ -540,10 +478,7 @@ function MakeIcon(svg) {
         xmlns: "http://www.w3.org/2000/svg",
         viewBox: "0 0 24 24"
       },
-
       svg);
-
-
 }
 
 const IconFeedMute = MakeIcon(
@@ -551,18 +486,15 @@ const IconFeedMute = MakeIcon(
     d: "M18 9.5c2.481 0 4.5 1.571 4.5 3.503 0 1.674-1.703 3.48-4.454 3.48-.899 0-1.454-.156-2.281-.357-.584.358-.679.445-1.339.686.127-.646.101-.924.081-1.56-.583-.697-1.007-1.241-1.007-2.249 0-1.932 2.019-3.503 4.5-3.503zm0-1.5c-3.169 0-6 2.113-6 5.003 0 1.025.37 2.032 1.023 2.812.027.916-.511 2.228-.997 3.184 1.302-.234 3.15-.754 3.989-1.268.709.173 1.388.252 2.03.252 3.542 0 5.954-2.418 5.954-4.98.001-2.906-2.85-5.003-5.999-5.003zm-.668 6.5h-1.719v-.369l.938-1.361v-.008h-.869v-.512h1.618v.396l-.918 1.341v.008h.95v.505zm3.035 0h-2.392v-.505l1.306-1.784v-.011h-1.283v-.7h2.25v.538l-1.203 1.755v.012h1.322v.695zm-10.338 9.5c1.578 0 2.971-1.402 2.971-3h-6c0 1.598 1.45 3 3.029 3zm.918-7.655c-.615-1.001-.947-2.159-.947-3.342 0-3.018 2.197-5.589 5.261-6.571-.472-1.025-1.123-1.905-2.124-2.486-.644-.374-1.041-1.07-1.04-1.82v-.003c0-1.173-.939-2.123-2.097-2.123s-2.097.95-2.097 2.122v.003c.001.751-.396 1.446-1.041 1.82-4.667 2.712-1.985 11.715-6.862 13.306v1.749h9.782c.425-.834.931-1.764 1.165-2.655zm-.947-15.345c.552 0 1 .449 1 1 0 .552-.448 1-1 1s-1-.448-1-1c0-.551.448-1 1-1z"
   }));
 
-
 const IconFeedSettings = MakeIcon(
   h("path", {
     d: "M6 16h-6v-3h6v3zm-2-5v-10h-2v10h2zm-2 7v5h2v-5h-2zm13-7h-6v-3h6v3zm-2-5v-5h-2v5h2zm-2 7v10h2v-10h-2zm13 3h-6v-3h6v3zm-2-5v-10h-2v10h2zm-2 7v5h2v-5h-2z"
   }));
 
-
 const IconMenuMore = MakeIcon(
   h("path", {
     d: "M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"
   }));
-
 
 const IconFeedAdd = MakeIcon(h("path", {
   d: "M24 9h-9v-9h-6v9h-9v6h9v9h6v-9h9z"
@@ -573,13 +505,13 @@ const IconShop = MakeIcon(
     d: "M16.53 7l-.564 2h-15.127l-.839-2h16.53zm-14.013 6h12.319l.564-2h-13.722l.839 2zm5.983 5c-.828 0-1.5.672-1.5 1.5 0 .829.672 1.5 1.5 1.5s1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm11.305-15l-3.432 12h-13.017l.839 2h13.659l3.474-12h1.929l.743-2h-4.195zm-6.305 15c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5z"
   }));
 
-
 const FIXTURES = {
   education: [{
       id: "5ba5",
       name: "Duke University",
       isPrivate: true,
-      unread: 1
+      unread: 1,
+      link: "https://www.duke.edu"
     },
     {
       id: "4f22",
@@ -607,10 +539,9 @@ const FIXTURES = {
   ],
 
   ib: [{
-      id: "5ba5",
-      name: "MD Global Partners",
-    },
-  ],
+    id: "5ba5",
+    name: "MD Global Partners",
+  }, ],
 
   research: [{
       id: "5ba5",
@@ -642,30 +573,24 @@ const FIXTURES = {
   ],
 
   conversation: [{
+      id: "10cf",
+      isOnline: true,
+      name: "Email"
+    },
+    {
       id: "cc23",
       isOnline: true,
-      unread: 5,
-      name: "Rogue Amendiares"
+      name: "Twitter"
     },
-
     {
       id: "95b4",
       isOnline: true,
-      name: "Takemura",
-      unread: 1
-    },
-    {
-      id: "10cf",
-      name: "Wakado O., Regina Jones"
+      name: "Linkedin",
     },
     {
       id: "e466",
-      name: "Dexter DeShawn"
+      name: "In Person"
     },
-    {
-      id: "ca0b",
-      name: "Megabuilding H10 Administration"
-    }
   ],
 
   messages: [{
@@ -678,9 +603,5 @@ const FIXTURES = {
     }
   }]
 };
-
-
-
-
 
 render(h(App, null), document.getElementById("root"));
