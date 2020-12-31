@@ -29,7 +29,6 @@ function App() {
               h("a", {
                 className: "nav__link",
                 href: "../index.html",
-                target: "_blank"
               }, "Home")),
 
             h("li", {
