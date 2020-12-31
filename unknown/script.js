@@ -100,7 +100,7 @@ function App() {
             },
             channels: FIXTURES.education
           }),
-          ),
+        ),
 
         h(NavSection, {
             renderTitle: props => h("h2", props, "Venture Capital")
@@ -153,15 +153,16 @@ function App() {
               },
               h(TextOverline, {
                 className: "segment-topbar__overline"
-              }, "NetWire_Seed: d869db7fe62fb07c25a0403ecaea55031744b5fb"),
+              }, "BrainImplant_ID: e5e950a3d497b6a1e4a56ce9aac135a9"),
 
 
               h(TextHeading4, {
                   className: "segment-topbar__title"
                 },
                 h(ChannelLink, {
-                  name: "varunram ganesh"
-                }))),
+                  name: "host: varunram ganesh"
+                }),
+                )),
 
 
             h("div", {
@@ -195,11 +196,56 @@ function App() {
               className: "channel-feed__body"
             },
             h(FeedMessage, {
-              message: FIXTURES.messages[0]
+              bodyMessage: FIXTURES.messages[0].content,
+              author: FIXTURES.messages[0].author.name,
+              time: FIXTURES.messages[0].dateTime,
             }),
             h(FeedMessage, {
-              message: FIXTURES.messages[0]
-            })),
+              bodyMessage: FIXTURES.messages[1].content,
+              author: FIXTURES.messages[1].author.name,
+              time: FIXTURES.messages[1].dateTime,
+            }),
+            h(FeedMessage, {
+              bodyMessage: FIXTURES.messages[2].content,
+              author: FIXTURES.messages[2].author.name,
+              time: FIXTURES.messages[2].dateTime,
+            }),
+            h(FeedMessage, {
+              bodyMessage: FIXTURES.messages[3].content,
+              author: FIXTURES.messages[3].author.name,
+              time: FIXTURES.messages[3].dateTime,
+            }),
+            h(FeedMessage, {
+              bodyMessage: FIXTURES.messages[4].content,
+              author: FIXTURES.messages[4].author.name,
+              time: FIXTURES.messages[4].dateTime,
+            }),
+            h(FeedMessage, {
+              bodyMessage: FIXTURES.messages[5].content,
+              author: FIXTURES.messages[5].author.name,
+              time: FIXTURES.messages[5].dateTime,
+            }),
+            h(FeedMessage, {
+              bodyMessage: FIXTURES.messages[6].content,
+              author: FIXTURES.messages[6].author.name,
+              time: FIXTURES.messages[6].dateTime,
+            }),
+            h(FeedMessage, {
+              bodyMessage: FIXTURES.messages[7].content,
+              author: FIXTURES.messages[7].author.name,
+              time: FIXTURES.messages[7].dateTime,
+            }),
+            h(FeedMessage, {
+              bodyMessage: FIXTURES.messages[8].content,
+              author: FIXTURES.messages[8].author.name,
+              time: FIXTURES.messages[8].dateTime,
+            }),
+            h(FeedMessage, {
+              bodyMessage: FIXTURES.messages[9].content,
+              author: FIXTURES.messages[9].author.name,
+              time: FIXTURES.messages[9].dateTime,
+            })
+          ),
 
           h("div", {
               className: "channel-feed__footer"
@@ -246,11 +292,11 @@ function App() {
           h(TextHeading3, {
             $as: "h4"
           }, "Tips"),
-          h(TextParagraph1, null, "Positions ordered reverse chronologically"),
-          h(TextParagraph1, null, "Numbers denote multiple roles performed"),
-          h(TextParagraph1, null, "Highlight indicates current positions"),
-          h(TextParagraph1, null, "Venture roles are ongoing"),
-          h(TextParagraph1, null, "varunram.com"),
+          h(TextParagraph1, null, "Positions ordered reverse chronologically."),
+          h(TextParagraph1, null, "Numbers denote multiple roles performed."),
+          h(TextParagraph1, null, "Highlight indicates current positions."),
+          h(TextParagraph1, null, "Venture roles are ongoing."),
+          h(TextParagraph1, null, "Messages denote real events."),
           h(TextHeading3, {
             $as: "h4"
           }, "Warning"),
@@ -279,7 +325,9 @@ function NavSection({
 }
 
 function FeedMessage({
-  message
+  bodyMessage,
+  author,
+  time
 }) {
   return (
     h("div", {
@@ -289,16 +337,14 @@ function FeedMessage({
           className: "message__body"
         },
         h("div", null,
-
-          "I got a gig lined up in Watson, no biggie. If you prove useful, expect more side gigs coming your way. I need a half-decent netrunner. Hit me up, provide credentials, eddies on completion.")),
-
+          bodyMessage)),
       h("div", {
           className: "message__footer"
         },
         h("span", {
           className: "message__authoring"
-        }, "V. M. Vargas"),
-        " - 11:04pm")));
+        }, author), " " + time))
+  );
 }
 
 function ChannelNav({
@@ -594,14 +640,96 @@ const FIXTURES = {
   ],
 
   messages: [{
-    id: "fd0cf",
-    content: "I got a gig lined up in Watson, no biggie. If you prove useful, expect more side gigs coming your way. I need a half-decent netrunner. Hit me up, provide credentials, eddies on completion.",
-    dateTime: "2077-10-09T11:04:57Z",
-    author: {
-      id: "d12c",
-      name: "V.M. Vargas"
+      id: "fd0cf",
+      content: "Fighting sentient AI drones and killer Robots. I think this may be the end",
+      dateTime: "2077",
+      author: {
+        id: "d12c",
+        name: "VG on behalf of humanity,"
+      }
+    },
+    {
+      id: "fd0cf",
+      content: "Yeah, I need to learn finance for this. Heading to Duke",
+      dateTime: "2020-08-19T09:30:12Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0c1",
+      content: "I have too many ideas and come across too many. Wish I could just talk about ideas as fulltime, that would be a lot more interesting. Wait, there are people already doing this? VENTURE CAPITALISTS??",
+      dateTime: "2019-10-08T22:30:40Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0c1",
+      content: "Climate Change + Zero Knowledge Proofs + Auto Nuke detonation for climate change brainstorming at Yale. Have an idea for Data Privacy + Blockchains, how about I start a new company EDS",
+      dateTime: "2019-06-04T22:10:20Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0c1",
+      content: "Blockchains + Clean Energy + Democratized access. Buzzwordy but I think I have something. Also I can talk to the cool nerds at MIT. Maybe time to leave Musicoin and focus on this a bit more",
+      dateTime: "2018-12-08T17:22:11Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0c1",
+      content: "Lightning Network. Cool name, project's hosted at MIT. Going to work on it a little bit, lets see how this goes",
+      dateTime: "2017-09-09T20:30:40Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0c1",
+      content: "Bitcoin? Ethereum?? SMART CONTRACTS??? Need to build something cool, how about a platform for independent musicians.",
+      dateTime: "2017-05-11T09:28:43Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0c1",
+      content: "Looks like they are not going to teach me that after all, what should I do now (panics inside). Hey, what’s this Open Source thing?",
+      dateTime: "2016-05-15T21:56:32Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0c1",
+      content: "My future is in building Terminator style killer robots. Maybe not killer, I want them to be a bit more nice towards me. I think Industrial Engineering in College will teach me that",
+      dateTime: "2015-08-10T22:35:11Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0c1",
+      content: "Going to create the old retro game Dangerous Dave in C++ using graphics.h for a high school project. Just a random guy jumping around obstacles, how long can this take?",
+      dateTime: "2014-08-01T23:18:22Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
     }
-  }]
+  ]
 };
 
 render(h(App, null), document.getElementById("root"));
