@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'Tiempos';
+  src: url("./TiemposHeadline.ttf");
+}
+
+@media screen and (max-width : 2000px) {
+  :root {
+    --height: 80px;
+    --width: 370px;
+    --f: 90px;
+    --ff: 23px;
+  }
+}
+
+.anim-sequence .anim1 {
+  animation: key-focus 3s infinite;
+}
+
+.anim-sequence .anim2 {
+  animation: key-focus 3s infinite 0.25s;
+}
+
+.anim-sequence .anim3 {
+  animation: key-focus 3s infinite 0.5s;
+}
+
+.anim-sequence .anim4 {
+  animation: key-focus 3s infinite 0.75s;
+}
+
+.anim-sequence .anim5 {
+  animation: key-focus 3s infinite 1s;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 5%;
+}
+
+.headline {
+  font-family: 'Tiempos';
+  color: white;
+  font-size: var(--f);
+  text-align: right;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.header {
+  font-family: 'HelveticaNeue-UltraLight';
+  font-size: var(--ff);
+  color: white;
+  margin-left: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.footer {
+  font-family: 'HelveticaNeue-UltraLight';
+  font-size: var(--ff);
+  color: white;
+  position: absolute;
+  text-transform: uppercase;
+  transform: scaleY(0.9);
+  bottom: 2%;
+  right: 5%;
+}
+
+.red {
+  color: #e80303;
+}
+
+.keyboard {
+  justify-content: center;
+  float: left;
+}
+
+.key {
+  position: relative;
+}
+
+.key:not(.black) {
+  width: var(--width);
+  height: var(--height);
+  margin-bottom: 7.5px;
+  border-bottom: none;
+  background-color: #FFE8E8;
+  z-index: 1;
+}
+
+.fl {
+  margin-left: 30px;
+}
+
+.third {
+  margin-left: 60px;
+}
+
+.last {
+  border-bottom: 1px solid #333 !important;
+}
+
+@keyframes key-focus {
+  25% {
+    background-color: #e80303;
+  }
+
+  50% {
+    background-color: #FD7D7D;
+  }
+}
