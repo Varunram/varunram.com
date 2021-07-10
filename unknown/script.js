@@ -105,17 +105,10 @@ function App() {
         ),
 
         h(NavSection, {
-            renderTitle: props => h("h2", props, "Venture Capital")
+            renderTitle: props => h("h2", props, "Finance")
           },
           h(ChannelNav, {
-            channels: FIXTURES.venture
-          })),
-
-        h(NavSection, {
-            renderTitle: props => h("h2", props, "Investment Banking")
-          },
-          h(ChannelNav, {
-            channels: FIXTURES.ib
+            channels: FIXTURES.finance
           })),
 
         h(NavSection, {
@@ -293,7 +286,7 @@ function App() {
             h("em", null, "top secret "), " portal where you can view information on MR. VARUNRAM GANESH. The content in this websites and all messages within are F.Y.O."),
           h(TextHeading3, {
             $as: "h4"
-          }, "Tips"),
+          }, "Notes"),
           h(TextParagraph1, null, "Positions ordered reverse chronologically."),
           h(TextParagraph1, null, "Numbers denote multiple roles performed."),
           h(TextParagraph1, null, "Highlight indicates current positions."),
@@ -568,7 +561,10 @@ const FIXTURES = {
     },
   ],
 
-  venture: [{
+  finance: [{
+      id: "5ba5",
+      name: "Montaigne Investment Management",
+    },{
       id: "5ba5",
       name: "New Stack Ventures",
     },
@@ -577,19 +573,14 @@ const FIXTURES = {
       name: "Alumni Ventures Group",
     },
     {
-      id: "4f23",
-      name: "G51",
-    },
-    {
       id: "4f24",
       name: "DigitalDX Ventures",
     },
+    {
+      id: "5ba5",
+      name: "MD Global Partners",
+    },
   ],
-
-  ib: [{
-    id: "5ba5",
-    name: "MD Global Partners",
-  }, ],
 
   research: [{
       id: "5ba5",
@@ -652,7 +643,16 @@ const FIXTURES = {
     },
     {
       id: "fd0cf",
-      content: "Yeah, I need to learn finance for this. Heading to Duke",
+      content: "Apparently you can only see cool startups and not invest them. Sucks, I want to invest. Time to start looking at investing jobs.",
+      dateTime: "2021-02-14T21:01:56Z",
+      author: {
+        id: "d12c",
+        name: "VG"
+      }
+    },
+    {
+      id: "fd0cf",
+      content: "Yeah, I need to learn finance for this. Heading to Duke.",
       dateTime: "2020-08-19T09:30:12Z",
       author: {
         id: "d12c",
